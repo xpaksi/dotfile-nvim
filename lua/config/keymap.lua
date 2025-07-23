@@ -1,35 +1,6 @@
-local fzf = require("fzf-lua")
-
--- oil
+-- nvimtree
 vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<leader>E", ":NvimTreeToggle<CR>", { desc = "Open parent directory" })
---
-
--- fzf-lua
-vim.keymap.set("n", "<leader>sf", function()
-	fzf.files()
-end, { desc = "Fzf filesystem" })
-
-vim.keymap.set("n", "<leader>sg", function()
-	fzf.live_grep()
-end, { desc = "Fzf grep project" })
-
-vim.keymap.set("n", "<leader>sd", function()
-	fzf.diagnostics_document()
-end, { desc = "Fzf diagnostics_document" })
-
-vim.keymap.set("n", "<leader>sx", function()
-	fzf.diagnostics_workspace()
-end, { desc = "Fzf diagnostics_workspace" })
-
-vim.keymap.set("n", "<leader>s/", function()
-	fzf.grep_curbuf()
-end, { desc = "Fzf search current buffer" })
-
-vim.keymap.set("n", "<leader>sb", function()
-	fzf.buffers()
-end, { desc = "Fzf search buffer" })
---
 
 -- vim related
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })

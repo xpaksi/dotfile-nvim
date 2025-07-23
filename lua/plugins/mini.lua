@@ -3,8 +3,9 @@ return {
 	version = false,
 	config = function()
 		require("mini.pairs").setup({})
-		require("mini.indentscope").setup()
 		require("mini.cursorword").setup()
-		require("mini.notify").setup()
+		require("mini.tabline").setup({
+			show_icons = false,
+		})
 	end,
 }
