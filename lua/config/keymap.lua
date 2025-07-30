@@ -1,6 +1,6 @@
 -- nvimtree
-vim.keymap.set("n", "<leader>e", ":NvimTreeFocus<CR>", { desc = "Open parent directory" })
-vim.keymap.set("n", "<leader>E", ":NvimTreeToggle<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "<leader>e", ":Neotree<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "<leader>E", ":Neotree close<CR>", { desc = "Open parent directory" })
 
 -- vim related
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })

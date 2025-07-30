@@ -9,7 +9,7 @@ return {
 		explorer = { enabled = true },
 		indent = { enabled = true },
 		input = { enabled = true },
-		picker = { enabled = false },
+		picker = { enabled = true },
 		notifier = { enabled = true },
 		quickfile = { enabled = true },
 		scope = { enabled = true },
@@ -67,6 +67,21 @@ return {
 				Snacks.picker.diagnostics_buffer()
 			end,
 			desc = "Buffer Diagnostics",
+		},
+
+		{
+			"<leader>ss",
+			function()
+				Snacks.picker.lsp_symbols()
+			end,
+			desc = "LSP Symbols",
+		},
+		{
+			"<leader>sS",
+			function()
+				Snacks.picker.lsp_workspace_symbols()
+			end,
+			desc = "LSP Workspace Symbols",
 		},
 	},
 }
