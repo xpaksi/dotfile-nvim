@@ -12,6 +12,7 @@ vim.api.nvim_create_autocmd("FileType", {
 		"python",
 		"sql",
 		"swift",
+		"haskell",
 	},
 	callback = function()
 		vim.treesitter.start()

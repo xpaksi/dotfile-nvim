@@ -4,9 +4,10 @@ return {
 	lazy = false,
 	---@type snacks.Config
 	opts = {
-		bigfile = { enabled = true },
+		bigfile = { enabled = false },
 		dashboard = { enabled = true },
-		explorer = { enabled = true },
+		image = { enabled = false },
+		explorer = { enabled = false },
 		indent = { enabled = true },
 		input = { enabled = true },
 		picker = { enabled = true },
@@ -14,7 +15,8 @@ return {
 		quickfile = { enabled = true },
 		scope = { enabled = true },
 		statuscolumn = { enabled = true },
-		words = { enabled = true },
+		words = { enabled = false },
+		terminal = { enabled = true },
 	},
 	keys = {
 		{
@@ -82,6 +84,13 @@ return {
 				Snacks.picker.lsp_workspace_symbols()
 			end,
 			desc = "LSP Workspace Symbols",
+		},
+		{
+			"<c-/>",
+			function()
+				Snacks.terminal()
+			end,
+			desc = "Toggle Terminal",
 		},
 	},
 }

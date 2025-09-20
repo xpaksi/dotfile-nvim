@@ -17,6 +17,7 @@ return {
 			sql = { "sqruff" },
 			json = { "prettierd" },
 			go = { "gofmt", "goimports" },
+			typescriptreact = { "prettierd" },
 		},
 	},
 }
