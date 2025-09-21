@@ -3,4 +3,4 @@ require("config.lazy")
 require("config.keymap")
 require("config.treesitter")
 
-vim.cmd.colorscheme("tokyonight-night")
+vim.cmd.colorscheme("catppuccin")
