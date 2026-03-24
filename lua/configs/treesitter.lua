@@ -14,8 +14,6 @@ vim.api.nvim_create_autocmd("FileType", {
 		"markdown",
 		"matlab",
 		"java",
-		"fsharp",
-		"cs",
 	},
 	callback = function()
 		vim.treesitter.start()

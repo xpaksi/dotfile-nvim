@@ -11,7 +11,7 @@ return {
 				dotfiles = true,
 			},
 			view = {
-				width = 30,
+				width = 40,
 			},
 			renderer = {
 				indent_markers = {
