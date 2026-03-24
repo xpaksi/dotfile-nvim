@@ -75,6 +75,24 @@ return {
 					filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 				},
 				vue_ls = {},
+				jdtls = {
+					settings = {
+						java = {
+							format = {
+								enabled = true,
+								settings = {
+									url = vim.fn.expand("~/Documents/final-project/hibernate-java-formatting.xml"),
+									profile = "Hibernate",
+								},
+							},
+							compiler = {
+								problemSeverities = {
+									["org.eclipse.jdt.core.compiler.problem.circularDependency"] = "warning",
+								},
+							},
+						},
+					},
+				},
 			}
 
 			for server, config in pairs(servers) do
